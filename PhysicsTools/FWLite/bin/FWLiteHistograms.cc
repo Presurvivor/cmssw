@@ -85,7 +85,7 @@ int main(int argc, char* argv[]) {
 
         // Handle to the muon collection
         edm::Handle<std::vector<Muon> > muons;
-        event.getByLabel(std::string("muons"), muons);
+        event.getByLabel(std::string("slimmedMuons"), muons);
 
         // loop muon collection and fill histograms
         for (std::vector<Muon>::const_iterator mu1 = muons->begin(); mu1 != muons->end(); ++mu1) {
