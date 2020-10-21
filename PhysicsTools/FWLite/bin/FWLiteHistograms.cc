@@ -22,7 +22,7 @@
 int main(int argc, char* argv[]) {
   // define what muon you are using; this is necessary as FWLite is not
   // capable of reading edm::Views
-  using reco::Muon;
+  using pat::Muon;
 
   // ----------------------------------------------------------------------
   // First Part:
